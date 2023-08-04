@@ -1,0 +1,70 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+.image-container {
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+}
+
+.finger {
+    animation: wagg 0.5s linear infinite;
+    
+    position: relative;
+    left: -80px;
+    top: 20px;
+    
+    z-index: -1;
+    width: 25%;
+}
+
+@keyframes wagg {
+    50% {
+        transform: rotate(12deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.carl {
+    width: 50%;
+    transform: scale(-1, 1);
+}
+
+@keyframes shake {
+    0% { transform: skewY(-15deg); }
+    5% { transform: skewY(15deg); }
+    10% { transform: skewY(-15deg); }
+    15% { transform: skewY(15deg); }
+    20% { transform: skewY(0deg); }
+    100% { transform: skewY(0deg); }
+}
